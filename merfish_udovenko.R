@@ -271,7 +271,3 @@ spatialReducedDim(mer_sfe, "PCA", 4, colGeometryName = "centroids", scattermore 
 
 #Zooming into bounding box (components 1, 3, 4)
 spatialReducedDim(mer_sfe, "PCA", ncomponents = c(1,3,4), colGeometryName = "cellSeg", bbox = bbox_use, divergent = TRUE, diverge_center = 0)
-
-matching_rows <- grep("PTEN", rownames(mer_sfe), value = TRUE)
-print(matching_rows)
-#Present EGFR, FGFR2, PTEN, 
